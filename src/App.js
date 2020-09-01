@@ -1,13 +1,9 @@
 import React, {Component} from 'react';
 import './App.css';
 import {Switch, Route} from 'react-router-dom';
+import ShopPage from './pages/shop/shop.component.jsx'
 import HomePage from './pages/homepage/homepage.component';
 
-const HatsPage = () => (
-  <div>
-    <h1>Hats page</h1>
-  </div>
-);
 
 class App extends Component {
   render() {
@@ -16,7 +12,7 @@ class App extends Component {
         <Switch>
           {/*Switch means that, the moment it finds a match, it does not render anything else inside the tag.*/}
           <Route exact path="/" component={HomePage} />
-          <Route path="/hats" component={HatsPage} />
+          <Route path="/shop" component={ShopPage} />
         </Switch>
       </div>
     );
