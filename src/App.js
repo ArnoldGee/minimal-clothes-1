@@ -14,9 +14,8 @@ class App extends Component {
     return (
       <div className="App">
         <Switch>
-          {' '}
           {/*Switch means that, the moment it finds a match, it does not render anything else inside the tag.*/}
-          <Route path="/" component={HomePage} />
+          <Route exact path="/" component={HomePage} />
           <Route path="/hats" component={HatsPage} />
         </Switch>
       </div>
