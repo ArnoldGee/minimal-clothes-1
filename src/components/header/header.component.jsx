@@ -22,6 +22,10 @@ const Header = ({currentUser}) => (
         <div className="option" onClick={() => auth.signOut()}>SIGN OUT</div>
         :<Link className="option" to="/signin">SIGN IN</Link>
       }
+      { currentUser ?
+        <div className='option'>{currentUser.displayName.toUpperCase()}</div>
+        :null
+      }
     </div>
   </div>
 )
