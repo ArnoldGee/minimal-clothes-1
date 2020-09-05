@@ -18,7 +18,7 @@ const StripeCheckoutButton = ({price}) => {
       name="Maximal Style Ltd."
       billingAddress
       shippingAddress
-      image="https://sendeyo.com/up/d/f3eb2117da"
+      image="https://sendeyo.com/up/d/c8531c95de"
       description={`Total price: $${price}`}
       amount={priceInCents}
       panelLabel="Pay now"
